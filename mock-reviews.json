@@ -1,0 +1,73 @@
+[
+  {
+    "id": 101,
+    "listingName": "Modern Apt in Shoreditch",
+    "guestName": "John Doe",
+    "rating": 4.5,
+    "publicReview": "Great location and very clean. The host was responsive.",
+    "channel": "airbnb",
+    "type": "guest-to-host",
+    "submittedAt": "2023-10-05T14:30:00Z",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 5 },
+      { "category": "communication", "rating": 4 },
+      { "category": "check_in", "rating": 5 }
+    ]
+  },
+  {
+    "id": 102,
+    "listingName": "Cozy Studio in Soho",
+    "guestName": "Sarah Smith",
+    "rating": 3.0,
+    "publicReview": "Bit noisy at night, but good value for money.",
+    "channel": "booking.com",
+    "type": "guest-to-host",
+    "submittedAt": "2023-09-12T09:15:00Z",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 3 },
+      { "category": "location", "rating": 5 }
+    ]
+  },
+  {
+    "id": 103,
+    "listingName": "Modern Apt in Shoreditch",
+    "guestName": "Michael Brown",
+    "rating": 5.0,
+    "publicReview": "Absolutely perfect! Will stay again.",
+    "channel": "vrbo",
+    "type": "guest-to-host",
+    "submittedAt": "2023-11-01T18:45:00Z",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 5 },
+      { "category": "accuracy", "rating": 5 }
+    ]
+  },
+  {
+    "id": 104,
+    "listingName": "Luxury Penthouse",
+    "guestName": "Emily White",
+    "rating": 2.0,
+    "publicReview": "Heating was not working. Disappointed.",
+    "channel": "airbnb",
+    "type": "guest-to-host",
+    "submittedAt": "2023-12-10T10:00:00Z",
+    "reviewCategory": [
+      { "category": "communication", "rating": 1 },
+      { "category": "value", "rating": 2 }
+    ]
+  },
+  {
+    "id": 105,
+    "listingName": "Cozy Studio in Soho",
+    "guestName": "David Wilson",
+    "rating": 4.8,
+    "publicReview": "Lovely place, small but functional.",
+    "channel": "direct",
+    "type": "guest-to-host",
+    "submittedAt": "2024-01-05T12:30:00Z",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 5 },
+      { "category": "communication", "rating": 5 }
+    ]
+  }
+]

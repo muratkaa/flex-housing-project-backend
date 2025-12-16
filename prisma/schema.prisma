@@ -1,0 +1,29 @@
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Review {
+  id          Int      @id @default(autoincrement())
+  hostawayId  Int      @unique
+  listingName String?
+  guestName   String?
+  rating      Float?
+  content     String?
+  channel     String?
+  type        String?
+  date        DateTime
+
+  isVisible   Boolean  @default(false)
+
+  categories  Json?
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
