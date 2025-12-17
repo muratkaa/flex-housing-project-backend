@@ -19,12 +19,17 @@ export class ReviewsController {
     return this.reviewsService.getAndNormalizeHostawayReviews();
   }
 
-  //gets data from db
+  //gets paginated data from db
+  @Get('paginated')
+  async findAllPaginated(@Query() filterDto: GetReviewsFilterDto) {
+    return this.reviewsService.findAllPaginated(filterDto);
+  }
+
+  //gets all data from db
   @Get()
   findAll(@Query() filterDto: GetReviewsFilterDto) {
     return this.reviewsService.findAll(filterDto);
   }
-
   //update reviews visibility
   @Patch(':id/visibility')
   updateVisibility(

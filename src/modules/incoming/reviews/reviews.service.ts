@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -19,47 +20,41 @@ export class ReviewsService {
   //this function is for my developing purposes, to sync db with mock data json
   async syncReviews() {
     try {
+      await this.prisma.review.deleteMany({});
+      this.logger.log('All existing reviews deleted from DB.');
+
       const filePath = path.join(process.cwd(), 'mock-reviews.json');
       const fileData = fs.readFileSync(filePath, 'utf-8');
-
       const reviews = JSON.parse(fileData) as HostawayReview[];
 
       let count = 0;
 
       for (const review of reviews) {
-        const categories = review.reviewCategory ?? [];
+        const submittedDate = new Date(review.submittedAt);
+        const isValidDate = !isNaN(submittedDate.getTime());
 
-        await this.prisma.review.upsert({
-          where: { hostawayId: review.id },
-          update: {
-            rating: review.rating,
-            content: review.publicReview,
-            status: review.status,
-            date: new Date(review.submittedAt),
-          },
-          create: {
+        await this.prisma.review.create({
+          data: {
             hostawayId: review.id,
-            listingName: review.listingName,
-            guestName: review.guestName,
-            rating: review.rating,
-            content: review.publicReview,
-            channel: review.channel ?? 'default_channel',
-            type: review.type,
-            status: review.status,
-            date: new Date(review.submittedAt),
-            categories: categories as unknown as Prisma.InputJsonValue,
-            isVisible: false,
+            listingName: review.listingName || 'Unknown Listing',
+            guestName: review.guestName || 'Anonymous',
+            rating: Number(review.rating) || 0,
+            content: review.publicReview || '',
+            channel: review.channel || 'direct',
+            type: review.type || 'guest-to-host',
+            status: review.status || 'published',
+            date: isValidDate ? submittedDate : new Date(),
+            categories: (review.reviewCategory as any) || [],
+            isVisible: true,
           },
         });
         count++;
       }
 
-      this.logger.log(`${count} reviews synced successfully from Mock File.`);
+      this.logger.log(`${count} reviews synced successfully.`);
       return { status: 'success', message: `${count} reviews synced.` };
-    } catch (error: unknown) {
-      const errorMessage =
-        error instanceof Error ? error.message : 'Unknown error';
-      this.logger.error(`Sync failed: ${errorMessage}`);
+    } catch (error) {
+      console.error(error);
       throw error;
     }
   }
@@ -82,26 +77,64 @@ export class ReviewsService {
 
   //get reviews from db
   async findAll(filterDto: GetReviewsFilterDto) {
-    const { listingName, minRating, channel, sortBy, sortOrder, isVisible } =
-      filterDto;
+    const { sortBy, sortOrder } = filterDto;
+    const where = this.buildWhereClause(filterDto);
 
-    const where: Prisma.ReviewWhereInput = {
-      ...(listingName && {
-        listingName: { contains: listingName, mode: 'insensitive' },
-      }),
-      ...(minRating && { rating: { gte: minRating } }),
-      ...(channel && { channel: { equals: channel, mode: 'insensitive' } }),
-      ...(isVisible !== undefined && { isVisible }),
-    };
+    // Sıralama mantığı
+    let orderBy: Prisma.ReviewOrderByWithRelationInput;
+    switch (sortBy) {
+      case 'rating':
+        orderBy = { rating: sortOrder ?? 'desc' };
+        break;
 
-    const orderBy: Prisma.ReviewOrderByWithRelationInput = sortBy
-      ? { [sortBy]: sortOrder ?? 'desc' }
-      : { date: 'desc' };
+      default:
+        orderBy = { date: sortOrder ?? 'desc' };
+        break;
+    }
 
     return this.prisma.review.findMany({
       where,
       orderBy,
     });
+  }
+
+  async findAllPaginated(filterDto: GetReviewsFilterDto) {
+    const { sortBy, sortOrder, page, limit } = filterDto;
+    const where = this.buildWhereClause(filterDto);
+
+    let orderBy: Prisma.ReviewOrderByWithRelationInput;
+    switch (sortBy) {
+      case 'rating':
+        orderBy = { rating: sortOrder ?? 'desc' };
+        break;
+
+      default:
+        orderBy = { date: sortOrder ?? 'desc' };
+        break;
+    }
+
+    const pageNum = Number(page) || 1;
+    const limitNum = Number(limit) || 10;
+    const skip = (pageNum - 1) * limitNum;
+
+    const total = await this.prisma.review.count({ where });
+
+    const data = await this.prisma.review.findMany({
+      where,
+      orderBy,
+      take: limitNum,
+      skip: skip,
+    });
+
+    return {
+      data,
+      meta: {
+        total,
+        page: pageNum,
+        lastPage: Math.ceil(total / limitNum),
+        limit: limitNum,
+      },
+    };
   }
 
   // for manager dashboard , update visibility
@@ -115,6 +148,23 @@ export class ReviewsService {
       where: { id },
       data: { isVisible },
     });
+  }
+
+  private buildWhereClause(
+    filterDto: GetReviewsFilterDto,
+  ): Prisma.ReviewWhereInput {
+    const { listingName, minRating, channel, isVisible } = filterDto;
+
+    return {
+      ...(listingName && {
+        listingName: { contains: listingName, mode: 'insensitive' },
+      }),
+      ...(minRating && { rating: { gte: Number(minRating) } }),
+      ...(channel && { channel: { equals: channel, mode: 'insensitive' } }),
+      ...(isVisible !== undefined && {
+        isVisible: String(isVisible) === 'true',
+      }),
+    };
   }
 
   private async fetchRawReviews(): Promise<HostawayReview[]> {

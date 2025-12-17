@@ -2,6 +2,7 @@ import { Transform, Type } from 'class-transformer';
 import {
   IsBoolean,
   IsNumber,
+  IsNumberString,
   IsOptional,
   IsString,
   Min,
@@ -34,4 +35,12 @@ export class GetReviewsFilterDto {
   @Transform(({ value }) => value === 'true')
   @IsBoolean()
   isVisible?: boolean;
+
+  @IsOptional()
+  @IsNumberString()
+  page?: string;
+
+  @IsOptional()
+  @IsNumberString()
+  limit?: string;
 }

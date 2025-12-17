@@ -1,61 +1,28 @@
 [
   {
-    "id": 7453,
+    "id": 1001,
     "type": "guest-to-host",
     "status": "published",
     "rating": 5,
     "publicReview": "Shane and family are wonderful! Would definitely host again :)",
     "reviewCategory": [
       { "category": "cleanliness", "rating": 10 },
-      { "category": "communication", "rating": 10 },
-      { "category": "respect_house_rules", "rating": 10 }
+      { "category": "communication", "rating": 10 }
     ],
-    "submittedAt": "2023-11-21 22:45:14",
-    "guestName": "Shane Finkelstein",
+    "submittedAt": "2023-11-21 22:45:00",
+    "guestName": "Shane F.",
     "listingName": "Modern Apt in Shoreditch",
     "channel": "airbnb"
   },
   {
-    "id": 7454,
-    "type": "guest-to-host",
-    "status": "published",
-    "rating": 4.5,
-    "publicReview": "Great location, but the wifi was a bit slow.",
-    "reviewCategory": [
-      { "category": "cleanliness", "rating": 10 },
-      { "category": "communication", "rating": 8 },
-      { "category": "location", "rating": 9 }
-    ],
-    "submittedAt": "2023-10-05 14:30:00",
-    "guestName": "John Doe",
-    "listingName": "Cozy Studio in Soho",
-    "channel": "booking.com"
-  },
-  {
-    "id": 7455,
-    "type": "guest-to-host",
-    "status": "published",
-    "rating": 3.5,
-    "publicReview": "A bit noisy but good value.",
-    "reviewCategory": [
-      { "category": "cleanliness", "rating": 8 },
-      { "category": "accuracy", "rating": 6 },
-      { "category": "value", "rating": 7 }
-    ],
-    "submittedAt": "2023-09-12 09:15:00",
-    "guestName": "Sarah Smith",
-    "listingName": "Luxury Penthouse",
-    "channel": "vrbo"
-  },
-  {
-    "id": 7456,
+    "id": 1002,
     "type": "guest-to-host",
     "status": "published",
     "rating": 2,
-    "publicReview": "Not clean enough. Disappointed.",
+    "publicReview": "Not clean enough. Disappointed given the price.",
     "reviewCategory": [
       { "category": "cleanliness", "rating": 4 },
-      { "category": "communication", "rating": 4 }
+      { "category": "value", "rating": 4 }
     ],
     "submittedAt": "2023-12-01 18:45:00",
     "guestName": "Michael Brown",
@@ -63,7 +30,355 @@
     "channel": "direct"
   },
   {
-    "id": 7457,
+    "id": 1003,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Best host ever! Even left us a welcome basket.",
+    "reviewCategory": [{ "category": "hospitality", "rating": 10 }],
+    "submittedAt": "2024-02-14 09:00:00",
+    "guestName": "Scarlett J.",
+    "listingName": "Modern Apt in Shoreditch",
+    "channel": "airbnb"
+  },
+  {
+    "id": 1004,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Great location for nightlife, bit noisy on weekends.",
+    "reviewCategory": [
+      { "category": "location", "rating": 10 },
+      { "category": "noise", "rating": 6 }
+    ],
+    "submittedAt": "2024-01-20 10:00:00",
+    "guestName": "Dave Grohl",
+    "listingName": "Modern Apt in Shoreditch",
+    "channel": "booking.com"
+  },
+  {
+    "id": 1005,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.5,
+    "publicReview": "Stylish apartment, exactly like the photos.",
+    "reviewCategory": [{ "category": "accuracy", "rating": 10 }],
+    "submittedAt": "2023-10-10 14:00:00",
+    "guestName": "Anna K.",
+    "listingName": "Modern Apt in Shoreditch",
+    "channel": "airbnb"
+  },
+  {
+    "id": 1006,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3,
+    "publicReview": "The elevator was broken, hard to carry bags up.",
+    "reviewCategory": [{ "category": "check-in", "rating": 5 }],
+    "submittedAt": "2023-09-05 11:00:00",
+    "guestName": "Old Man Logan",
+    "listingName": "Modern Apt in Shoreditch",
+    "channel": "vrbo"
+  },
+  {
+    "id": 1007,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Superb vibe, loved the brick walls.",
+    "reviewCategory": [{ "category": "design", "rating": 10 }],
+    "submittedAt": "2024-03-01 16:20:00",
+    "guestName": "Hipster Joe",
+    "listingName": "Modern Apt in Shoreditch",
+    "channel": "direct"
+  },
+  {
+    "id": 1008,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Good stay, but check-out time is too early.",
+    "reviewCategory": [{ "category": "value", "rating": 8 }],
+    "submittedAt": "2023-12-25 09:00:00",
+    "guestName": "Santa C.",
+    "listingName": "Modern Apt in Shoreditch",
+    "channel": "booking.com"
+  },
+  {
+    "id": 1009,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Close to Boxpark and the tube. Perfect.",
+    "reviewCategory": [{ "category": "location", "rating": 10 }],
+    "submittedAt": "2024-02-28 13:00:00",
+    "guestName": "Traveller Ted",
+    "listingName": "Modern Apt in Shoreditch",
+    "channel": "airbnb"
+  },
+  {
+    "id": 1010,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 1,
+    "publicReview": "Party going on next door all night. Could not sleep.",
+    "reviewCategory": [{ "category": "noise", "rating": 2 }],
+    "submittedAt": "2023-11-05 03:00:00",
+    "guestName": "Sleepy Sam",
+    "listingName": "Modern Apt in Shoreditch",
+    "channel": "airbnb"
+  },
+
+  {
+    "id": 2001,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.5,
+    "publicReview": "Great location, but the wifi was a bit slow.",
+    "reviewCategory": [
+      { "category": "location", "rating": 10 },
+      { "category": "communication", "rating": 8 }
+    ],
+    "submittedAt": "2023-10-05 14:30:00",
+    "guestName": "John Doe",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "booking.com"
+  },
+  {
+    "id": 2002,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 1.5,
+    "publicReview": "Heating was broken in the middle of winter. Host did not respond.",
+    "reviewCategory": [{ "category": "communication", "rating": 1 }],
+    "submittedAt": "2024-01-10 08:00:00",
+    "guestName": "Chris Evans",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "airbnb"
+  },
+  {
+    "id": 2003,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Small but mighty! Right in the center of action.",
+    "reviewCategory": [{ "category": "location", "rating": 10 }],
+    "submittedAt": "2023-12-12 12:00:00",
+    "guestName": "City Girl",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "airbnb"
+  },
+  {
+    "id": 2004,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Very clean, easy check-in.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 10 }],
+    "submittedAt": "2024-02-05 15:00:00",
+    "guestName": "Clean Freak",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "direct"
+  },
+  {
+    "id": 2005,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3,
+    "publicReview": "Too small for two people honestly.",
+    "reviewCategory": [{ "category": "value", "rating": 6 }],
+    "submittedAt": "2023-09-20 10:00:00",
+    "guestName": "Couple Trouble",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "booking.com"
+  },
+  {
+    "id": 2006,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Loved the nearby cafes. Host suggested great places.",
+    "reviewCategory": [{ "category": "communication", "rating": 10 }],
+    "submittedAt": "2024-03-08 09:30:00",
+    "guestName": "Foodie Frank",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "airbnb"
+  },
+  {
+    "id": 2007,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 2,
+    "publicReview": "Smelled like smoke.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 2 }],
+    "submittedAt": "2023-11-15 16:00:00",
+    "guestName": "Karen M.",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "vrbo"
+  },
+  {
+    "id": 2008,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.8,
+    "publicReview": "Perfect for a solo traveler.",
+    "reviewCategory": [{ "category": "value", "rating": 9 }],
+    "submittedAt": "2024-01-25 11:00:00",
+    "guestName": "Solo Steve",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "airbnb"
+  },
+  {
+    "id": 2009,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3.5,
+    "publicReview": "Noisy street, bring earplugs.",
+    "reviewCategory": [{ "category": "noise", "rating": 5 }],
+    "submittedAt": "2023-10-30 22:00:00",
+    "guestName": "Light Sleeper",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "booking.com"
+  },
+  {
+    "id": 2010,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Efficient use of space, very cozy indeed.",
+    "reviewCategory": [{ "category": "design", "rating": 10 }],
+    "submittedAt": "2024-02-18 14:00:00",
+    "guestName": "Designer Dan",
+    "listingName": "Cozy Studio in Soho",
+    "channel": "airbnb"
+  },
+
+  {
+    "id": 3001,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3.5,
+    "publicReview": "A bit noisy but good value.",
+    "reviewCategory": [
+      { "category": "value", "rating": 7 },
+      { "category": "cleanliness", "rating": 8 }
+    ],
+    "submittedAt": "2023-09-12 09:15:00",
+    "guestName": "Sarah Smith",
+    "listingName": "Luxury Penthouse",
+    "channel": "vrbo"
+  },
+  {
+    "id": 3002,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Absolutely stunning views of the city skyline.",
+    "reviewCategory": [{ "category": "location", "rating": 10 }],
+    "submittedAt": "2023-12-31 23:00:00",
+    "guestName": "Richie Rich",
+    "listingName": "Luxury Penthouse",
+    "channel": "airbnb"
+  },
+  {
+    "id": 3003,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Luxurious, but the jacuzzi wasn't hot enough.",
+    "reviewCategory": [{ "category": "amenities", "rating": 7 }],
+    "submittedAt": "2024-01-05 18:00:00",
+    "guestName": "Posh Spice",
+    "listingName": "Luxury Penthouse",
+    "channel": "direct"
+  },
+  {
+    "id": 3004,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 2,
+    "publicReview": "Not worth the money. Furniture looks worn out.",
+    "reviewCategory": [{ "category": "value", "rating": 3 }],
+    "submittedAt": "2023-11-20 10:00:00",
+    "guestName": "Critical Carl",
+    "listingName": "Luxury Penthouse",
+    "channel": "booking.com"
+  },
+  {
+    "id": 3005,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "The concierge service was excellent.",
+    "reviewCategory": [{ "category": "service", "rating": 10 }],
+    "submittedAt": "2024-02-10 12:00:00",
+    "guestName": "Business Bob",
+    "listingName": "Luxury Penthouse",
+    "channel": "airbnb"
+  },
+  {
+    "id": 3006,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.5,
+    "publicReview": "Huge space, great for entertaining.",
+    "reviewCategory": [{ "category": "accuracy", "rating": 9 }],
+    "submittedAt": "2023-10-15 20:00:00",
+    "guestName": "Party Pat",
+    "listingName": "Luxury Penthouse",
+    "channel": "vrbo"
+  },
+  {
+    "id": 3007,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3,
+    "publicReview": "Neighbors complained about music at 9 PM.",
+    "reviewCategory": [{ "category": "noise", "rating": 5 }],
+    "submittedAt": "2023-09-01 21:00:00",
+    "guestName": "DJ Dave",
+    "listingName": "Luxury Penthouse",
+    "channel": "airbnb"
+  },
+  {
+    "id": 3008,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Top notch cleanliness and amenities.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 10 }],
+    "submittedAt": "2024-03-02 11:00:00",
+    "guestName": "Monica Geller",
+    "listingName": "Luxury Penthouse",
+    "channel": "direct"
+  },
+  {
+    "id": 3009,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Great place but difficult to find the entrance.",
+    "reviewCategory": [{ "category": "check-in", "rating": 6 }],
+    "submittedAt": "2024-01-18 15:00:00",
+    "guestName": "Lost Larry",
+    "listingName": "Luxury Penthouse",
+    "channel": "booking.com"
+  },
+  {
+    "id": 3010,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 1,
+    "publicReview": "Double booked! We had nowhere to stay.",
+    "reviewCategory": [{ "category": "communication", "rating": 0 }],
+    "submittedAt": "2023-12-24 16:00:00",
+    "guestName": "Angry Andy",
+    "listingName": "Luxury Penthouse",
+    "channel": "direct"
+  },
+
+  {
+    "id": 4001,
     "type": "guest-to-host",
     "status": "published",
     "rating": 5,
@@ -78,7 +393,116 @@
     "channel": "airbnb"
   },
   {
-    "id": 7458,
+    "id": 4002,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Beautiful, but very windy on the balcony.",
+    "reviewCategory": [{ "category": "location", "rating": 9 }],
+    "submittedAt": "2023-11-10 14:00:00",
+    "guestName": "Windy Wendy",
+    "listingName": "Riverside View Apartment",
+    "channel": "booking.com"
+  },
+  {
+    "id": 4003,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Morning coffee with a river view. Unbeatable.",
+    "reviewCategory": [{ "category": "value", "rating": 10 }],
+    "submittedAt": "2024-02-20 08:00:00",
+    "guestName": "Coffee Carl",
+    "listingName": "Riverside View Apartment",
+    "channel": "airbnb"
+  },
+  {
+    "id": 4004,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3,
+    "publicReview": "Far from the tube station, lots of walking.",
+    "reviewCategory": [{ "category": "location", "rating": 6 }],
+    "submittedAt": "2023-10-02 17:00:00",
+    "guestName": "Lazy Luke",
+    "listingName": "Riverside View Apartment",
+    "channel": "vrbo"
+  },
+  {
+    "id": 4005,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.5,
+    "publicReview": "Modern and clean. Good kitchen.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 9 }],
+    "submittedAt": "2024-01-05 19:00:00",
+    "guestName": "Chef Gordon",
+    "listingName": "Riverside View Apartment",
+    "channel": "direct"
+  },
+  {
+    "id": 4006,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 2,
+    "publicReview": "Damp smell in the bathroom.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 3 }],
+    "submittedAt": "2023-12-05 09:00:00",
+    "guestName": "Nosey Nora",
+    "listingName": "Riverside View Apartment",
+    "channel": "airbnb"
+  },
+  {
+    "id": 4007,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Very peaceful area, slept like a baby.",
+    "reviewCategory": [{ "category": "noise", "rating": 10 }],
+    "submittedAt": "2024-03-01 07:00:00",
+    "guestName": "Sleeper Sue",
+    "listingName": "Riverside View Apartment",
+    "channel": "booking.com"
+  },
+  {
+    "id": 4008,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Nice host, easy communication.",
+    "reviewCategory": [{ "category": "communication", "rating": 9 }],
+    "submittedAt": "2023-11-25 12:30:00",
+    "guestName": "Talkative Tom",
+    "listingName": "Riverside View Apartment",
+    "channel": "vrbo"
+  },
+  {
+    "id": 4009,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3.5,
+    "publicReview": "Good but overpriced for the size.",
+    "reviewCategory": [{ "category": "value", "rating": 6 }],
+    "submittedAt": "2024-02-12 15:00:00",
+    "guestName": "Budget Bill",
+    "listingName": "Riverside View Apartment",
+    "channel": "airbnb"
+  },
+  {
+    "id": 4010,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Watching the boats go by was the highlight.",
+    "reviewCategory": [{ "category": "location", "rating": 10 }],
+    "submittedAt": "2023-09-18 18:00:00",
+    "guestName": "Sailor Sam",
+    "listingName": "Riverside View Apartment",
+    "channel": "direct"
+  },
+
+  {
+    "id": 5001,
     "type": "guest-to-host",
     "status": "published",
     "rating": 4,
@@ -93,22 +517,116 @@
     "channel": "booking.com"
   },
   {
-    "id": 7459,
+    "id": 5002,
     "type": "guest-to-host",
     "status": "published",
-    "rating": 1.5,
-    "publicReview": "Heating was broken in the middle of winter. Host did not respond.",
-    "reviewCategory": [
-      { "category": "communication", "rating": 1 },
-      { "category": "accuracy", "rating": 2 }
-    ],
-    "submittedAt": "2024-01-10 08:00:00",
-    "guestName": "Chris Evans",
-    "listingName": "Cozy Studio in Soho",
+    "rating": 5,
+    "publicReview": "Perfect for families. The garden is lovely.",
+    "reviewCategory": [{ "category": "amenities", "rating": 10 }],
+    "submittedAt": "2023-11-01 10:00:00",
+    "guestName": "Family Man",
+    "listingName": "Kensington Garden Flat",
     "channel": "airbnb"
   },
   {
-    "id": 7460,
+    "id": 5003,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3,
+    "publicReview": "Furniture is a bit dated.",
+    "reviewCategory": [{ "category": "accuracy", "rating": 6 }],
+    "submittedAt": "2023-10-20 16:00:00",
+    "guestName": "Modern Mary",
+    "listingName": "Kensington Garden Flat",
+    "channel": "vrbo"
+  },
+  {
+    "id": 5004,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Very safe and upscale neighborhood.",
+    "reviewCategory": [{ "category": "location", "rating": 10 }],
+    "submittedAt": "2024-01-12 13:00:00",
+    "guestName": "Safe Sally",
+    "listingName": "Kensington Garden Flat",
+    "channel": "direct"
+  },
+  {
+    "id": 5005,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.5,
+    "publicReview": "Host provided a crib for our baby.",
+    "reviewCategory": [{ "category": "hospitality", "rating": 10 }],
+    "submittedAt": "2023-12-08 09:00:00",
+    "guestName": "Baby Momma",
+    "listingName": "Kensington Garden Flat",
+    "channel": "airbnb"
+  },
+  {
+    "id": 5006,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 2,
+    "publicReview": "Garden was unkempt and full of weeds.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 4 }],
+    "submittedAt": "2023-09-15 11:00:00",
+    "guestName": "Gardener Guy",
+    "listingName": "Kensington Garden Flat",
+    "channel": "booking.com"
+  },
+  {
+    "id": 5007,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Walking distance to museums. Ideal.",
+    "reviewCategory": [{ "category": "location", "rating": 10 }],
+    "submittedAt": "2024-03-05 14:00:00",
+    "guestName": "Museum Mike",
+    "listingName": "Kensington Garden Flat",
+    "channel": "airbnb"
+  },
+  {
+    "id": 5008,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Good wifi, was able to work remotely.",
+    "reviewCategory": [{ "category": "amenities", "rating": 9 }],
+    "submittedAt": "2024-02-22 10:00:00",
+    "guestName": "Digital Nomad",
+    "listingName": "Kensington Garden Flat",
+    "channel": "direct"
+  },
+  {
+    "id": 5009,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3.5,
+    "publicReview": "Expensive for what it is.",
+    "reviewCategory": [{ "category": "value", "rating": 6 }],
+    "submittedAt": "2023-11-28 15:00:00",
+    "guestName": "Thrifty Tim",
+    "listingName": "Kensington Garden Flat",
+    "channel": "airbnb"
+  },
+  {
+    "id": 5010,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Charming english flat.",
+    "reviewCategory": [{ "category": "design", "rating": 10 }],
+    "submittedAt": "2024-01-02 12:00:00",
+    "guestName": "Anglophile Ann",
+    "listingName": "Kensington Garden Flat",
+    "channel": "vrbo"
+  },
+
+  {
+    "id": 6001,
     "type": "guest-to-host",
     "status": "published",
     "rating": 4.8,
@@ -123,33 +641,111 @@
     "channel": "direct"
   },
   {
-    "id": 7461,
+    "id": 6002,
     "type": "guest-to-host",
     "status": "published",
     "rating": 3,
-    "publicReview": "Okay for a short stay, but smaller than it looks in photos.",
-    "reviewCategory": [
-      { "category": "accuracy", "rating": 6 },
-      { "category": "location", "rating": 9 }
-    ],
-    "submittedAt": "2023-11-30 11:15:00",
-    "guestName": "Tom Hiddleston",
-    "listingName": "Chelsea Loft",
-    "channel": "vrbo"
+    "publicReview": "Beautiful area but the stairs are steep.",
+    "reviewCategory": [{ "category": "accuracy", "rating": 7 }],
+    "submittedAt": "2023-10-01 11:00:00",
+    "guestName": "Grandma",
+    "listingName": "Notting Hill Townhouse",
+    "channel": "booking.com"
   },
   {
-    "id": 7462,
+    "id": 6003,
     "type": "guest-to-host",
     "status": "published",
     "rating": 5,
-    "publicReview": "Best host ever! Even left us a welcome basket.",
-    "reviewCategory": [
-      { "category": "communication", "rating": 10 },
-      { "category": "hospitality", "rating": 10 }
-    ],
-    "submittedAt": "2024-02-14 09:00:00",
-    "guestName": "Scarlett Johansson",
-    "listingName": "Modern Apt in Shoreditch",
+    "publicReview": "Felt like being in the movie Notting Hill!",
+    "reviewCategory": [{ "category": "location", "rating": 10 }],
+    "submittedAt": "2023-12-14 13:00:00",
+    "guestName": "Julia R.",
+    "listingName": "Notting Hill Townhouse",
+    "channel": "airbnb"
+  },
+  {
+    "id": 6004,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 2,
+    "publicReview": "Plumbing issues in the master bath.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 3 }],
+    "submittedAt": "2023-11-08 08:00:00",
+    "guestName": "Plumber Paul",
+    "listingName": "Notting Hill Townhouse",
+    "channel": "vrbo"
+  },
+  {
+    "id": 6005,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Close to Portobello market. Amazing.",
+    "reviewCategory": [{ "category": "location", "rating": 10 }],
+    "submittedAt": "2024-01-28 09:00:00",
+    "guestName": "Shopper Sue",
+    "listingName": "Notting Hill Townhouse",
+    "channel": "airbnb"
+  },
+  {
+    "id": 6006,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.5,
+    "publicReview": "Very colorful and vibrant house.",
+    "reviewCategory": [{ "category": "design", "rating": 10 }],
+    "submittedAt": "2023-09-25 15:00:00",
+    "guestName": "Artist Al",
+    "listingName": "Notting Hill Townhouse",
+    "channel": "direct"
+  },
+  {
+    "id": 6007,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3.5,
+    "publicReview": "Heating was slow to start.",
+    "reviewCategory": [{ "category": "amenities", "rating": 6 }],
+    "submittedAt": "2024-02-15 20:00:00",
+    "guestName": "Cold Cole",
+    "listingName": "Notting Hill Townhouse",
+    "channel": "booking.com"
+  },
+  {
+    "id": 6008,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "Clean, spacious and elegant.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 10 }],
+    "submittedAt": "2023-12-05 10:00:00",
+    "guestName": "Elegant Ellie",
+    "listingName": "Notting Hill Townhouse",
+    "channel": "airbnb"
+  },
+  {
+    "id": 6009,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 1,
+    "publicReview": "Mice in the kitchen! Horror.",
+    "reviewCategory": [{ "category": "cleanliness", "rating": 0 }],
+    "submittedAt": "2023-10-31 00:00:00",
+    "guestName": "Scared Sarah",
+    "listingName": "Notting Hill Townhouse",
+    "channel": "booking.com"
+  },
+  {
+    "id": 6010,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "publicReview": "Lovely stay, host was very kind.",
+    "reviewCategory": [{ "category": "communication", "rating": 9 }],
+    "submittedAt": "2024-01-08 11:00:00",
+    "guestName": "Kind Karl",
+    "listingName": "Notting Hill Townhouse",
     "channel": "airbnb"
   }
 ]
