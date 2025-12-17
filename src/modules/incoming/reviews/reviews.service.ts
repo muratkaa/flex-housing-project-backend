@@ -5,8 +5,8 @@ import * as path from 'path';
 import { Prisma } from '@prisma/client';
 import { HostawayReview } from '../../external/hostaway/interfaces/hostaway-review.interface';
 import { GetReviewsFilterDto } from './dto/get-reviews-filter.dto';
-import { HostawayService } from 'src/modules/external/hostaway/hostaway.service';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../../../prisma/prisma.service';
+import { HostawayService } from '../../../modules/external/hostaway/hostaway.service';
 
 @Injectable()
 export class ReviewsService {
