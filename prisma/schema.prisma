@@ -12,18 +12,16 @@ datasource db {
 model Review {
   id          Int      @id @default(autoincrement())
   hostawayId  Int      @unique
-  listingName String?
-  guestName   String?
-  rating      Float?
-  content     String?
-  channel     String?
-  type        String?
+  listingName String
+  guestName   String
+  rating      Float
+  content     String
+  channel     String
+  type        String
+  status      String?
   date        DateTime
-
-  isVisible   Boolean  @default(false)
-
   categories  Json?
-
+  isVisible   Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }

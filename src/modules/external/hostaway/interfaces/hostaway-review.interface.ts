@@ -5,12 +5,13 @@ export interface HostawayReviewCategory {
 
 export interface HostawayReview {
   id: number;
-  listingName: string;
-  guestName: string;
+  type: string;
+  status: string;
   rating: number;
   publicReview: string;
-  channel: string;
-  type: string;
-  submittedAt: string;
   reviewCategory?: HostawayReviewCategory[];
+  submittedAt: string;
+  guestName: string;
+  listingName: string;
+  channel?: string;
 }
