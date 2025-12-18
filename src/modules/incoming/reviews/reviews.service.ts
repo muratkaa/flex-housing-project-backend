@@ -98,6 +98,7 @@ export class ReviewsService {
     });
   }
 
+  //gets reviews with pagination
   async findAllPaginated(filterDto: GetReviewsFilterDto) {
     const { sortBy, sortOrder, page, limit } = filterDto;
     const where = this.buildWhereClause(filterDto);
@@ -148,6 +149,30 @@ export class ReviewsService {
       where: { id },
       data: { isVisible },
     });
+  }
+
+  //calculate rating with visible ratings
+  async getListingRating(listingName: string) {
+    const result = await this.prisma.review.aggregate({
+      _avg: {
+        rating: true,
+      },
+      _count: {
+        id: true,
+      },
+      where: {
+        listingName: listingName,
+        isVisible: true,
+      },
+    });
+
+    const average = result._avg.rating || 0;
+    const count = result._count.id || 0;
+
+    return {
+      rating: Number(average.toFixed(2)),
+      count: count,
+    };
   }
 
   private buildWhereClause(

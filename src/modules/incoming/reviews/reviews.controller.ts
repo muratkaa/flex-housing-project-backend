@@ -25,11 +25,18 @@ export class ReviewsController {
     return this.reviewsService.findAllPaginated(filterDto);
   }
 
+  //calculates property rating with visible reviews
+  @Get('rating')
+  async getRating(@Query('listingName') listingName: string) {
+    return this.reviewsService.getListingRating(listingName);
+  }
+
   //gets all data from db
   @Get()
   findAll(@Query() filterDto: GetReviewsFilterDto) {
     return this.reviewsService.findAll(filterDto);
   }
+
   //update reviews visibility
   @Patch(':id/visibility')
   updateVisibility(
